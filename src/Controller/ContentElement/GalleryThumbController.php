@@ -23,10 +23,9 @@ final class GalleryThumbController extends ImagesController
         ContentModel $model,
         Request $request
     ): Response {
-        // Rohwert aus tl_content (z.B. "versiona", "versionb", ...)
+        
         $template->galleryVersion = $model->galleryVersion;
 
-        // OPTIONAL: Mapping auf Zahlen, falls du das brauchst
         $versionMap = [
             'versiona' => 1,
             'versionb' => 2,
@@ -44,7 +43,6 @@ final class GalleryThumbController extends ImagesController
 
         $template->galleryVersionNumber = $versionMap[$model->galleryVersion] ?? 0;
 
-        // Restliche Logik (Bilder/Galerie) übernimmt der Core-Controller
         return parent::getResponse($template, $model, $request);
     }
 }
