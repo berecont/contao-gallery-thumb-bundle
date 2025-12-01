@@ -7,3 +7,4 @@ Ein bis fünf Vorschaubilder werden in einem Grid dargestellt. Bei höherer Bild
 Bei Klick wird die ganze Galerie in der Lightbox [Glightbox wird empfohlen](https://github.com/inspiredminds/contao-glightbox) angezeigt.  
 
 
+<img width="790" height="728" alt="backend" src="https://github.com/user-attachments/assets/2c268431-8bd9-4329-b1ef-1b645385940e" />
