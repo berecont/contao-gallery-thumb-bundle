@@ -4,6 +4,7 @@
 
 {% set cssID = data.cssID|deserialize %}
 {% set backendClass = cssID[1]|default('') %}
+{% set items_per_row = galleryVersionNumber %}
 
 {% block wrapper %}
     {% set attributes = attrs(attributes|default)
