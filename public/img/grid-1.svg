@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 690 770">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #43464a;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        display: none;
+      }
+
+      .st3 {
+        fill: #7e7f82;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_1" class="st2">
+    <g>
+      <rect class="st1" x="-37.9" y="-16.6" width="765.7" height="688.7"/>
+      <path d="M727.2-16v687.4H-37.2V-16h764.4M728.5-17.3H-38.5v690h767V-17.3h0Z"/>
+    </g>
+  </g>
+  <g id="Ebene_2">
+    <g>
+      <rect class="st0" x="5" y="5" width="680" height="760" rx="15" ry="15"/>
+      <path class="st3" d="M670,10c5.5,0,10,4.5,10,10v730c0,5.5-4.5,10-10,10H20c-5.5,0-10-4.5-10-10V20c0-5.5,4.5-10,10-10h650M670,0H20C9,0,0,9,0,20v730c0,11,9,20,20,20h650c11,0,20-9,20-20V20c0-11-9-20-20-20h0Z"/>
+    </g>
+  </g>
+</svg>

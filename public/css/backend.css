@@ -1,0 +1,98 @@
+#ctrl_galleryVersion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+#ctrl_galleryVersion > legend {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+}
+
+#ctrl_galleryVersion br {
+    display: none;
+}
+
+#ctrl_galleryVersion .tl_radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#ctrl_galleryVersion label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0;              /* Text ausblenden, nur Icon anzeigen */
+    line-height: 0;
+}
+
+#ctrl_galleryVersion label::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% auto;
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_0"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-1.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_1"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-2.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_2"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-2a.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_3"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-3.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_4"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-3a.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_5"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-3b.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_6"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-3c.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_7"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-4.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_8"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-4a.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_9"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-5.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_10"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-5a.svg");
+}
+
+#ctrl_galleryVersion label[for="opt_galleryVersion_11"]::before {
+    background-image: url("/bundles/berecontcontaogallerythumb/img/grid-5b.svg");
+}
+
+#ctrl_galleryVersion .tl_radio:checked + label::before {
+    border-color: #0080c0;
+    box-shadow: 0 0 0 2px rgba(0, 128, 192, 0.15);
+}

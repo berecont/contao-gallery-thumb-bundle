@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 690 770">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #43464a;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        display: none;
+      }
+
+      .st3 {
+        fill: #7e7f82;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_1" class="st2">
+    <g>
+      <rect class="st1" x="-37.9" y="-16.6" width="765.7" height="688.7"/>
+      <path d="M727.2-16v687.4H-37.2V-16h764.4M728.5-17.3H-38.5v690h767V-17.3h0Z"/>
+    </g>
+  </g>
+  <g id="Ebene_2">
+    <g>
+      <path class="st0" d="M5,375V20c0-8.3,6.7-15,15-15h315v370H5Z"/>
+      <path class="st3" d="M330,10v360H10V20c0-5.5,4.5-10,10-10h310M340,0H20C9,0,0,9,0,20v360h340V0h0Z"/>
+    </g>
+    <g>
+      <path class="st0" d="M355,765v-240h330v221.7c0,10.1-8.2,18.3-18.3,18.3h-311.7Z"/>
+      <path class="st3" d="M680,530v216.7c0,7.3-6,13.3-13.3,13.3h-306.7v-230h320M690,520h-340v250h316.7c12.9,0,23.3-10.4,23.3-23.3v-226.7h0Z"/>
+    </g>
+    <g>
+      <path class="st0" d="M355,245V5h311.7c10.1,0,18.3,8.2,18.3,18.3v221.7h-330Z"/>
+      <path class="st3" d="M666.7,10c7.3,0,13.3,6,13.3,13.3v216.7h-320V10h306.7M666.7,0h-316.7v250h340V23.3c0-12.9-10.4-23.3-23.3-23.3h0Z"/>
+    </g>
+    <g>
+      <rect class="st0" x="355" y="265" width="330" height="240"/>
+      <path class="st3" d="M680,270v230h-320v-230h320M690,260h-340v250h340v-250h0Z"/>
+    </g>
+    <g>
+      <path class="st0" d="M20,765c-8.3,0-15-6.7-15-15v-355h330v370H20Z"/>
+      <path class="st3" d="M330,400v360H20c-5.5,0-10-4.5-10-10v-350h320M340,390H0v360c0,11,9,20,20,20h320v-380h0Z"/>
+    </g>
+  </g>
+</svg>

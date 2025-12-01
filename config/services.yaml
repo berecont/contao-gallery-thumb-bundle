@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Berecont\ContaoGalleryThumbBundle\:
+    resource: ../src
+    exclude: ../src/{ContaoManager,BerecontContaoGalleryThumbBundle.php}
+

@@ -1,0 +1,63 @@
+{# contao/templates/content_element/gallery/gallerythumb.html.twig #}
+{% extends "@Contao/content_element/gallery.html.twig" %}
+{% use "@Contao/component/_stylesheet.html.twig" %}
+
+{% set versionToCount = {
+    'versiona': 1,
+    'versionb': 2,
+    'versionc': 2,
+    'versiond': 3,
+    'versione': 3,
+    'versionf': 3,
+    'versiong': 3,
+    'versionh': 4,
+    'versioni': 4,
+    'versionj': 5,
+    'versionk': 5,
+    'versionl': 5
+} %}
+
+{% set currentVersion = data.gallerythumbVersion|default('versionh') %}
+{% set visibleCount = versionToCount[currentVersion]|default(4) %}
+
+{% block wrapper %}
+    {% set attributes = attrs(attributes|default)
+        .addClass(gallerythumbClass|default(''))
+        .addClass('gallerythumbwrapper')
+        .addClass(currentVersion)
+    %}
+
+    {% add "gallerythumb_css" to stylesheets %}
+        {% with {file: asset('bundles/berecontcontaogallerythumb/css/gallerythumb.css')} %}
+            {{ block('stylesheet_component') }}
+        {% endwith %}
+    {% endadd %} 
+
+    {{ parent() }}
+{% endblock %}
+
+{% block list_attributes %}
+    {% set list_attributes = attrs(list_attributes|default)
+        .addClass('gallery js-gallery')
+        .set('data-visible-count', visibleCount)
+    %}
+    {{ parent() }}
+{% endblock %}
+
+{% block figure_component %}
+    {% set figure_attributes = attrs(figure_attributes|default)
+        .addClass('gallery-item')
+    %}
+    {{ parent() }}
+{% endblock %}
+
+{% block script %}
+    {% add "gallerythumb_js" to body %}
+        <script src="{{ asset('bundles/berecontcontaogallerythumb/js/gallerythumb.js') }}"></script>
+    {% endadd %}
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,21 @@
+CTE:
+  gallerythumb:
+    - Galerie Thumbnail
+    - Erzeugt eine Bildergalerie bestehend aus Miniaturbildern als Grid
+
+tl_content:
+  galleryVersion:
+    0: Anzahl und Position der Miniaturbilder
+    1: Hier können Sie die Anzahl und das Grid der Miniaturbilder auswählen.
+    versiona: eins
+    versionb: zwei
+    versionc: zweia
+    versiond: drei
+    versione: dreia
+    versionf: dreib
+    versiong: dreic
+    versionh: vier
+    versioni: viera
+    versionj: fuenf
+    versionk: fuenfa
+    versionl: fuenfb

@@ -1,0 +1,32 @@
+{
+    "name": "berecont/contao-gallery-thumb-bundle",
+    "description": "Thumbnail Galerie mit Zähler für noch mehr Bilder.",
+    "license": "MIT",
+    "type": "contao-bundle",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Bernhard Renner",
+            "email": "info@berecont.at",
+            "homepage": "https://berecont.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "info@berecont.at"
+    },
+    "require": {
+        "php": "^8.2",
+        "contao/manager-bundle": "^5.3",
+        "contao/core-bundle": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Berecont\\ContaoGalleryThumbBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Berecont\\ContaoGalleryThumbBundle\\ContaoManager\\Plugin"
+    }
+}
+

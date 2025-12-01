@@ -1,0 +1,22 @@
+{# contao/templates/content_element/gallerythumb.html.twig #}
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+    {% set cssID = data.cssID|deserialize %}
+    {% set backendClass = cssID[1]|default('') %}
+
+    {{
+        content_element('gallery', {
+            multiSRC:   data.multiSRC,
+            useHomeDir: data.useHomeDir,
+            sortBy:     data.sortBy,
+            metaIgnore: data.metaIgnore,
+            size:       data.size,
+            fullsize:   data.fullsize,
+
+            customTpl: 'content_element/gallery/gallerythumb',
+            gallerythumbClass: backendClass,
+            gallerythumbVersion:  data.galleryVersion
+        })
+    }} 
+{% endblock %}

@@ -1,0 +1,21 @@
+CTE:
+  gallerythumb:
+    - Gallery thumbnail
+    - Creates an image gallery consisting of thumbnails arranged in a grid
+
+tl_content:
+  galleryVersion:
+    0: Number and position of thumbnails
+    1: Here you can select the number and grid of thumbnails.
+    versiona: eins
+    versionb: zwei
+    versionc: zweia
+    versiond: drei
+    versione: dreia
+    versionf: dreib
+    versiong: dreic
+    versionh: vier
+    versioni: viera
+    versionj: fuenf
+    versionk: fuenfa
+    versionl: fuenfb

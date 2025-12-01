@@ -1,0 +1,94 @@
+/* Optionaler Wrapper, falls du die maximale Breite begrenzen willst */
+.gallery-wrapper {
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+/* UL als Grid-Container */
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+/* Erstes Bild über die ganze Breite (erste Zeile) */
+.gallery > li:first-child {
+  grid-column: 1 / -1;
+}
+
+/* Figure als flexibler Container mit definierter Höhe/Breite */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* 16:9 für das erste Bild */
+.gallery > li:first-child .gallery-item {
+  aspect-ratio: 16 / 9;
+}
+
+/* Quadratische Bilder für alle anderen Items */
+.gallery > li:not(:first-child) .gallery-item {
+  aspect-ratio: 1 / 1;
+}
+
+/* Bilder füllen ihren Container */
+.gallery img,
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Versteckte LI (für Vorschau ausblenden, für Glightbox im DOM lassen) */
+.gallery-hidden {
+  display: none !important;
+}
+
+/* Markierung für das letzte sichtbare Element, auf das "+X" kommt */
+.gallery-more {
+  position: relative;
+}
+
+/* Overlay für "+X" */
+.gallery-more .gallery-item::after,
+.gallery-more .more-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+  pointer-events: none; /* Klick geht an den Link/das Bild */
+}
+
+/* Wir benutzen im JS ein <span.more-overlay>, daher hier die Klasse */
+.more-overlay {
+  /* Styling bereits oben definiert */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Hover-Effekt */
+.gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-link:hover .gallery-image {
+  filter: brightness(0.9);
+  transition: filter 0.2s ease-in-out;
+}
