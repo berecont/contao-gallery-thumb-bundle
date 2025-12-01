@@ -1,22 +1,48 @@
-{# contao/templates/content_element/gallerythumb.html.twig #}
-{% extends "@Contao/content_element/_base.html.twig" %}
+{# contao/templates/content_element/gallery/gallerythumb.html.twig #}
+{% extends "@Contao/content_element/gallery.html.twig" %}
+{% use "@Contao/component/_stylesheet.html.twig" %}
 
-{% block content %}
-    {% set cssID = data.cssID|deserialize %}
-    {% set backendClass = cssID[1]|default('') %}
+{% set cssID = data.cssID|deserialize %}
+{% set backendClass = cssID[1]|default('') %}
 
-    {{
-        content_element('gallery', {
-            multiSRC:   data.multiSRC,
-            useHomeDir: data.useHomeDir,
-            sortBy:     data.sortBy,
-            metaIgnore: data.metaIgnore,
-            size:       data.size,
-            fullsize:   data.fullsize,
+{% block wrapper %}
+    {% set attributes = attrs(attributes|default)
+        .addClass(backendClass)
+        .addClass('gallerythumbwrapper')
+        .addClass(galleryVersion)
+    %}
 
-            customTpl: 'content_element/gallery/gallerythumb',
-            gallerythumbClass: backendClass,
-            gallerythumbVersion:  data.galleryVersion
-        })
-    }} 
+    {% add "gallerythumb_css" to stylesheets %}
+        {% with {file: asset('bundles/berecontcontaogallerythumb/css/gallerythumb.css')} %}
+            {{ block('stylesheet_component') }}
+        {% endwith %}
+    {% endadd %} 
+
+    {{ parent() }}
 {% endblock %}
+
+{% block list_attributes %}
+    {% set list_attributes = attrs(list_attributes|default)
+        .addClass('gallery js-gallery')
+        .set('data-visible-count', galleryVersionNumber)
+    %}
+    {{ parent() }}
+{% endblock %}
+
+{% block figure_component %}
+    {% set figure_attributes = attrs(figure_attributes|default)
+        .addClass('gallery-item')
+    %}
+    {{ parent() }}
+{% endblock %}
+
+{% block script %}
+    {% add "gallerythumb_js" to body %}
+        <script src="{{ asset('bundles/berecontcontaogallerythumb/js/gallerythumb.js') }}"></script>
+    {% endadd %}
+{% endblock %}
+
+
+
+
+

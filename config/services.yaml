@@ -1,9 +1,14 @@
 services:
   _defaults:
     autowire: true
-    autoconfigure: true
+    autoconfigure: true        
 
   Berecont\ContaoGalleryThumbBundle\:
     resource: ../src
     exclude: ../src/{ContaoManager,BerecontContaoGalleryThumbBundle.php}
 
+  Berecont\ContaoGalleryThumbBundle\Controller\ContentElement\GalleryThumbController:
+    public: true
+    bind:
+      $filesStorage: '@contao.filesystem.virtual.files'
+      $validExtensions: '%contao.image.valid_extensions%'
