@@ -311,13 +311,13 @@
 }
 
 /* Optional: Hover-Effekt */
-.gallery-link {
+.gallery-item a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.gallery-link:hover .gallery-image {
+.gallery-item a:hover img {
   filter: brightness(0.9);
   transition: filter 0.2s ease-in-out;
 }
