@@ -1,5 +1,4 @@
 # Galerie Miniaturbilder Gridvorschau  
-## WORK IN PROGESS
 
 ## Bildergalerie mit Thumbnail und Bildercounter  
 
