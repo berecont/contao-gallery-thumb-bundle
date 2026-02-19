@@ -3,7 +3,6 @@
     "description": "Thumbnail Galerie mit Zähler für noch mehr Bilder.",
     "license": "MIT",
     "type": "contao-bundle",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Bernhard Renner",
