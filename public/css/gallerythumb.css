@@ -1,6 +1,6 @@
 
 /* UL als Grid-Container */
-.gallery {
+.content-gallerythumb .gallery {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 }
 
 /* Figure als flexibler Container mit definierter Höhe/Breite */
-.gallery-item {
+.content-gallerythumb .gallery-item {
   position: relative;
   display: block;
   width: 100%;
@@ -269,8 +269,8 @@
 
 
 /* Bilder füllen ihren Container */
-.gallery img,
-.gallery-image {
+.content-gallerythumb .gallery img,
+.content-gallerythumb .gallery-image {
   display: block;
   width: 100%;
   height: 100%;
@@ -278,18 +278,18 @@
 }
 
 /* Versteckte LI (für Vorschau ausblenden, für Glightbox im DOM lassen) */
-.gallery-hidden {
+.content-gallerythumb .gallery-hidden {
   display: none !important;
 }
 
 /* Markierung für das letzte sichtbare Element, auf das "+X" kommt */
-.gallery-more {
+.content-gallerythumb .gallery-more {
   position: relative;
 }
 
 /* Overlay für "+X" */
-.gallery-more .gallery-item::after,
-.gallery-more .more-overlay {
+.content-gallerythumb .gallery-more .gallery-item::after,
+.content-gallerythumb .gallery-more .more-overlay {
   position: absolute;
   inset: 0;
   padding: 0;
@@ -303,7 +303,7 @@
 }
 
 /* Wir benutzen im JS ein <span.more-overlay>, daher hier die Klasse */
-.more-overlay {
+.content-gallerythumb .more-overlay {
   /* Styling bereits oben definiert */
   display: flex;
   justify-content: center;
@@ -311,13 +311,13 @@
 }
 
 /* Optional: Hover-Effekt */
-.gallery-item a {
+.content-gallerythumb .gallery-item a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.gallery-item a:hover img {
+.content-gallerythumb .gallery-item a:hover img {
   filter: brightness(0.9);
   transition: filter 0.2s ease-in-out;
 }
